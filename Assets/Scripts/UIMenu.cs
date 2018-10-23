@@ -31,10 +31,10 @@ public class UIMenu : MonoBehaviour {
 		gold.text = player.gold.ToString();
 	}
 
-
-	
-	// Update is called once per frame
-	void Update () {
-		
+	public void OnClick_Deal(){
+		var dealer = GameObject.FindObjectOfType<PokerDealer>();
+		dealer.DealPoker();
 	}
+
+
 }
